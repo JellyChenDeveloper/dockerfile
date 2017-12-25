@@ -1,0 +1,10 @@
+version: "2"
+services:
+  webapp:
+    build: apache/
+    ports:
+      - "80:80"
+    volumes:
+      - ./apache/www:/var/www/html
+      - ./apache/logs:/var/log/httpd
+    # command: /usr/sbin/httpd -D FOREGROUND

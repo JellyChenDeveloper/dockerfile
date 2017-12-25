@@ -1,0 +1,14 @@
+version: "2"
+services:
+  webapp:
+    build: ~/Documents/Conf/docker/php/lamp/
+    ports:
+      - "80:80"
+      - "22:22"
+      - "443:443"
+      - "3306:3306"
+      - "9001:9001"
+    volumes:
+      - .:/var/www/html
+      # - ./apache/logs:/var/log/httpd
+    # command: /usr/sbin/httpd -D FOREGROUND
