@@ -21,8 +21,8 @@ RUN yum install net-tools -y;
 # install apache
 RUN yum install httpd -y;
 # install mysql
-RUN yum install -y mysql mysql-server
-RUN echo "NETWORKING=yes" > /etc/sysconfig/network
+# RUN yum install -y mysql mysql-server
+# RUN echo "NETWORKING=yes" > /etc/sysconfig/network
 
 # install php
 RUN rpm -Uvh http://ftp.iij.ad.jp/pub/linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm;\

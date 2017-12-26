@@ -1,7 +1,7 @@
 version: "2"
 services:
   webapp:
-    build: ~/Documents/Conf/docker/php/lamp/
+    build: ~/Documents/Conf/dockerfile/php/lamp/
     ports:
       - "80:80"
       - "22:22"
