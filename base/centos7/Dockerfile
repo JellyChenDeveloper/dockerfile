@@ -9,10 +9,10 @@ FROM centos:latest
 MAINTAINER JellyChenDeveloper 451453325@qq.com
 
 
-# 更换为阿里云国内源
-RUN yum install wget -y && wget http://mirrors.aliyun.com/repo/Centos-7.repo;\
-	mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak;\
-	mv Centos-7.repo /etc/yum.repos.d/CentOS-Base.repo && \
-	yum update -y && yum clean all
-	# 安装 net-tools vim
-RUN yum install -y net-tools vim && yum clean all
+# 更新阿里源
+RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
+ADD Centos-7.repo /etc/yum.repos.d/CentOS-Base.repo
+RUN yum update -y && yum clean all
+
+# 安装 net-tools vim
+RUN yum install -y net-tools vim wget && yum clean all
