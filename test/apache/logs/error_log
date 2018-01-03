@@ -1,8 +1,0 @@
-[Sun Dec 24 07:01:23.219839 2017] [suexec:notice] [pid 7] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
-[Sun Dec 24 07:01:23.233466 2017] [auth_digest:notice] [pid 7] AH01757: generating secret for digest authentication ...
-[Sun Dec 24 07:01:23.234233 2017] [lbmethod_heartbeat:notice] [pid 7] AH02282: No slotmem from mod_heartmonitor
-[Sun Dec 24 07:01:23.236345 2017] [mpm_prefork:notice] [pid 7] AH00163: Apache/2.4.6 (CentOS) configured -- resuming normal operations
-[Sun Dec 24 07:01:23.236614 2017] [core:notice] [pid 7] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
-[Sun Dec 24 07:01:37.116547 2017] [autoindex:error] [pid 8] [client 172.18.0.1:60572] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
-[Sun Dec 24 12:08:45.431972 2017] [autoindex:error] [pid 10] [client 172.18.0.1:60634] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
-[Sun Dec 24 12:23:26.378228 2017] [autoindex:error] [pid 11] [client 172.18.0.1:60636] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
