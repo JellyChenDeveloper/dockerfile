@@ -3,9 +3,16 @@
 ## 基础镜像
 
 ### centos6
-更新阿里源，安装`net-tools`,`vim`,`wget`
-[jellychendeveloper/os:centos6 dockerfile](./base/centos6/Dockerfile)
+[jellychendeveloper/os:centos6 dockerfile](https://github.com/JellyChenDeveloper/dockerfile/blob/master/base/centos6/Dockerfile)
+
+#### ChangeList
+1. 更新阿里源
+2. 安装`net-tools`,`vim`,`wget`
+
 
 ### centos7 
-更新阿里源，安装`net-tools`,`vim`,`wget`
-[jellychendeveloper/os:centos7 dockerfile](./base/centos7/Dockerfile)
+[jellychendeveloper/os:centos7 dockerfile](https://github.com/JellyChenDeveloper/dockerfile/blob/master/base/centos7/Dockerfile)
+
+#### ChangeList
+1. 更新阿里源
+2. 安装`net-tools`,`vim`,`wget`
