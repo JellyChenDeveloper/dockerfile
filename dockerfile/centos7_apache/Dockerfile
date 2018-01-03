@@ -30,7 +30,7 @@ RUN sed -i '/ServerName www.example.com/s/^#//' /etc/httpd/conf/httpd.conf;\
 # 设置开机启动
 RUN systemctl enable httpd.service
 
-ADD run.sh /run.sh 
+ADD run.sh /run.sh
 RUN chmod 777 /run.sh
 
 EXPOSE 80
