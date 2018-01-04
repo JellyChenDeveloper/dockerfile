@@ -15,4 +15,4 @@
 
 #### ChangeList
 1. 更新阿里源
-2. 安装`net-tools`,`vim`,`wget`
+2. 安装`net-tools`,`vim`,`wget`,`supervisord`,`nginx`
