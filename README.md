@@ -3,7 +3,7 @@
 ## 基础镜像
 
 ### centos6
-[jellychendeveloper/os:centos6 dockerfile](https://github.com/JellyChenDeveloper/dockerfile/blob/master/base/centos6/Dockerfile)
+* [`centos6` (centos6/Dockerfile)](https://github.com/JellyChenDeveloper/dockerfile/blob/master/base/centos6/Dockerfile)
 
 #### ChangeList
 1. 更新阿里源
@@ -11,7 +11,7 @@
 
 
 ### centos7 
-[jellychendeveloper/os:centos7 dockerfile](https://github.com/JellyChenDeveloper/dockerfile/blob/master/base/centos7/Dockerfile)
+* [`centos7` (centos7/Dockerfile)](https://github.com/JellyChenDeveloper/dockerfile/blob/master/base/centos7/Dockerfile)
 
 #### ChangeList
 1. 更新阿里源
