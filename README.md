@@ -15,7 +15,8 @@
 
 #### ChangeList
 1. 更新阿里源
-2. 安装`net-tools`,`vim`,`wget`,`supervisord`,`nginx`
+1. 安装`net-tools`,`vim`,`wget`,`supervisord`,`nginx`
+1. 设置为中国时区
 
 
 ### ubuntu14
