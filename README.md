@@ -7,8 +7,8 @@
 
 #### ChangeList
 1. 更新阿里源
-2. 安装`net-tools`,`vim`,`wget`
-
+1. 安装`net-tools`,`vim`,`wget`
+1. 设置为中国时区`(TODO)`
 
 ### centos7 
 * [`centos7` (centos7/Dockerfile)](https://github.com/JellyChenDeveloper/dockerfile/blob/master/base/centos7/Dockerfile)
@@ -24,4 +24,5 @@
 
 #### ChangeList
 1. 更新阿里源
-2. 安装`vim`,`supervisord`
+1. 安装`vim`,`supervisord`
+1. 设置为中国时区`(TODO)`
