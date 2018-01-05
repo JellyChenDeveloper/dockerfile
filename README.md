@@ -16,3 +16,11 @@
 #### ChangeList
 1. 更新阿里源
 2. 安装`net-tools`,`vim`,`wget`,`supervisord`,`nginx`
+
+
+### ubuntu14
+* [`ubuntu14`,`ubuntu_14.04` (ubuntu14/Dockerfile)](https://github.com/JellyChenDeveloper/dockerfile/blob/master/base/ubuntu14/Dockerfile)
+
+#### ChangeList
+1. 更新阿里源
+2. 安装`vim`,`supervisord`
