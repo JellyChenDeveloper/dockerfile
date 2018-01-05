@@ -1,0 +1,11 @@
+version: "3"
+services:
+  supervisor:
+    build: ~/Documents/Conf/dockerfile/base/centos7/
+    ports:
+      - "80:80"
+      - "9001:9001"
+    volumes:
+      - ~/Documents/Conf/dockerfile/volumes/supervisor/:/etc/supervisor/
+      - ~/Documents/Conf/dockerfile/volumes/apache/:/home/apache/
+    command: "supervisord -c /etc/supervisor/supervisord.conf"

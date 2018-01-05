@@ -8,6 +8,8 @@ FROM centos:latest
 
 MAINTAINER JellyChenDeveloper 451453325@qq.com
 
+# 设置时区为中国
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 # 更新阿里源
 RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
@@ -16,17 +18,16 @@ ADD nginx.repo /etc/yum.repos.d/nginx.repo
 
 # RUN yum update -y && yum clean all
 
-# 安装 net-tools vim
-RUN yum install -y net-tools vim wget \
-	&& yum clean all
-RUN yum install -y nginx \
-	&& yum clean all
-RUN yum install -y python-setuptools\
+# 安装 net-tools vim nginx python-setuptools
+RUN yum update -y \
+	&& yum install -y net-tools vim wget nginx python-setuptools \
 	&& yum clean all
 RUN easy_install supervisor
 
-ADD supervisord.conf /etc/supervisord.conf
+# VOLUME /etc/supervisor/
 
 EXPOSE 80 9001
 
-CMD ["supervisord"]
+WORKDIR "/etc/supervisor/"
+
+CMD ["supervisord","-c","/etc/supervisor/supervisord.conf"]
