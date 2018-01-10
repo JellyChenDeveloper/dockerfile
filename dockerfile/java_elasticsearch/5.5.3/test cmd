@@ -1,0 +1,4 @@
+docker build -t java_es:5.5.3 .
+docker run -it -P java_es:5.5.3
+docker run -d -p 9200:9200 -p 9300:9300 --name javaes java_es:5.5.3
+docker exec -it  javaes /bin/bash
