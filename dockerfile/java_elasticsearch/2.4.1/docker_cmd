@@ -1,0 +1,7 @@
+docker build -t java_es:2.4.1 .
+docker run -it -P java_es:2.4.1
+docker run -d -p 9200:9200 -p 9300:9300 --name javaes2 java_es:2.4.1
+docker run -d -p 9200:9200 -p 9300:9300 -v $(pwd)/data:/usr/share/elasticsearch/data --name javaes2 java_es:2.4.1
+docker exec -it  javaes2 /bin/bash
+
+https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/rpm/elasticsearch/2.4.1/elasticsearch-2.4.1.rpm
