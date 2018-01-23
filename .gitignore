@@ -2,3 +2,4 @@ volumes/mysql/database/
 logs/*
 /learn/*
 2.4.1/data/*
+*.sublime-*
