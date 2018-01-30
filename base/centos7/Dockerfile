@@ -25,8 +25,7 @@ RUN set -x\
 	&& yum clean all
 RUN easy_install supervisor
 
-RUN mkdir -p /etc/supervisor/conf.d/
-COPY supervisord.conf /etc/supervisor/
+ADD supervisor/ /etc/supervisor
 
 EXPOSE 80 9001
 

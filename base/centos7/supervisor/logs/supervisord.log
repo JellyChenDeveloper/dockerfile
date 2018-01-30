@@ -1,0 +1,33 @@
+2018-01-05 15:49:48,904 CRIT Supervisor running as root (no user in config file)
+2018-01-05 15:49:48,904 INFO Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2018-01-05 15:49:48,966 INFO RPC interface 'supervisor' initialized
+2018-01-05 15:49:48,966 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2018-01-05 15:49:48,967 INFO RPC interface 'supervisor' initialized
+2018-01-05 15:49:48,967 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-05 15:49:48,970 INFO supervisord started with pid 1
+2018-01-05 15:49:49,973 INFO spawned: '1' with pid 9
+2018-01-05 15:49:50,984 INFO success: 1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-05 15:51:55,573 WARN received SIGTERM indicating exit request
+2018-01-05 15:51:55,574 INFO waiting for 1 to die
+2018-01-05 15:51:55,672 INFO stopped: 1 (exit status 0)
+2018-01-05 15:51:58,026 CRIT Supervisor running as root (no user in config file)
+2018-01-05 15:51:58,027 INFO Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2018-01-05 15:51:58,057 INFO RPC interface 'supervisor' initialized
+2018-01-05 15:51:58,058 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2018-01-05 15:51:58,058 INFO RPC interface 'supervisor' initialized
+2018-01-05 15:51:58,058 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-05 15:51:58,061 INFO supervisord started with pid 1
+2018-01-05 15:51:59,063 INFO spawned: '1' with pid 9
+2018-01-05 15:52:00,072 INFO success: 1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-05 15:52:10,964 INFO waiting for 1 to stop
+2018-01-05 15:52:11,052 INFO stopped: 1 (exit status 0)
+2018-01-05 15:52:12,057 INFO spawned: '1' with pid 11
+2018-01-05 15:52:13,071 INFO success: 1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-05 15:52:29,587 INFO waiting for 1 to stop
+2018-01-05 15:52:29,682 INFO stopped: 1 (exit status 0)
+2018-01-05 15:52:30,692 INFO spawned: '1' with pid 13
+2018-01-05 15:52:31,703 INFO success: 1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-05 15:52:37,756 INFO waiting for 1 to stop
+2018-01-05 15:52:37,864 INFO stopped: 1 (exit status 0)
+2018-01-05 15:52:38,870 INFO spawned: '1' with pid 15
+2018-01-05 15:52:39,881 INFO success: 1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
