@@ -19,15 +19,17 @@ ADD nginx.repo /etc/yum.repos.d/nginx.repo
 # RUN yum update -y && yum clean all
 
 # 安装 net-tools vim nginx python-setuptools
-RUN yum update -y \
+RUN set -x\
+	&& yum update -y \
 	&& yum install -y net-tools vim wget nginx python-setuptools \
 	&& yum clean all
 RUN easy_install supervisor
 
-# VOLUME /etc/supervisor/
+RUN mkdir -p /etc/supervisor/conf.d/
+COPY supervisord.conf /etc/supervisor/
 
 EXPOSE 80 9001
 
 WORKDIR "/etc/supervisor/"
 
-CMD ["supervisord","-c","/etc/supervisor/supervisord.conf"]
+ENTRYPOINT supervisord -c /etc/supervisor/supervisord.conf

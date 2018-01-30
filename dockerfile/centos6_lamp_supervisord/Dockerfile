@@ -58,7 +58,7 @@ RUN sed -i '/ServerName www.example.com/s/^#//' /etc/httpd/conf/httpd.conf;\
 
 ADD index.php /var/www/html/
 ADD supervisord.conf /etc/
-EXPOSE 22 80 443 3306 9001
+EXPOSE 22 80 443 9001
 
 ADD run.sh /run.sh
 RUN chmod 777 /run.sh

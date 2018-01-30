@@ -1,6 +1,6 @@
 #!/bin/bash
-service mysqld start
-sleep 1
+# service mysqld start
+# sleep 1
 # echo "start change privaliege;"
 # spawn mysql -u root -p
 # expect "password:" 
@@ -10,5 +10,5 @@ sleep 1
 # send "exit;\r"
 # expect eof
 # echo "end change privaliege;"
-service mysqld status
+# service mysqld status
 supervisord -n
