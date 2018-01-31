@@ -24,11 +24,11 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update\
-	&& apt-get -y install vim \
+	&& apt-get -y install vim wget curl openssh-server\
 	&& apt-get clean\
 	&& rm -rf /var/lib/apt/lists/*
 
-# RUN sed -ri "s/exit 101/exit 0/" /usr/sbin/policy-rc.d
+RUN sed -ri "s/exit 101/exit 0/" /usr/sbin/policy-rc.d
 RUN apt-get update\
 	&& apt-get -y install supervisor \
 	&& apt-get clean\
